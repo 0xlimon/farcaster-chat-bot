@@ -146,15 +146,21 @@ export default function ChatBot() {
               </div>
               <div className="w-10 h-10 rounded-full overflow-hidden bg-indigo-400 flex items-center justify-center">
                 {userProfileImage ? (
-                  // استفاده از تگ img به جای کامپوننت Image برای اطمینان از نمایش صحیح
-                  <img 
+                  <Image 
                     src={userProfileImage} 
                     alt={userDisplayName || 'User profile'} 
+                    width={40} 
+                    height={40}
                     className="w-full h-full object-cover"
+                    unoptimized={true}
+                    priority={true}
                     onError={(e) => {
                       console.error('Error loading profile image:', userProfileImage);
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.onerror = null;
+                      // Switch to default icon on error
+                      const target = e.target as HTMLImageElement;
+                      if (target) {
+                        target.style.display = 'none';
+                      }
                     }}
                   />
                 ) : (
