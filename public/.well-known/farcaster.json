@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "REPLACE_WITH_YOUR_HEADER",
+    "payload": "REPLACE_WITH_YOUR_PAYLOAD",
+    "signature": "REPLACE_WITH_YOUR_SIGNATURE"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Farcaster Chat Bot",
+    "iconUrl": "${DEPLOYMENT_URL}/icon.png",
+    "homeUrl": "${DEPLOYMENT_URL}",
+    "imageUrl": "${DEPLOYMENT_URL}/preview.png",
+    "buttonTitle": "Start Chat",
+    "splashImageUrl": "${DEPLOYMENT_URL}/splash.png",
+    "splashBackgroundColor": "#4F46E5",
+    "webhookUrl": "${DEPLOYMENT_URL}/api/webhook"
+  }
+}
