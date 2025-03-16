@@ -7,11 +7,11 @@
   "frame": {
     "version": "1",
     "name": "Farcaster Chat Bot",
-    "iconUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/icon.png",
+    "iconUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
     "homeUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/",
-    "imageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/preview.png",
+    "imageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
     "buttonTitle": "Start Chat",
-    "splashImageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/splash.png",
+    "splashImageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
     "splashBackgroundColor": "#4F46E5",
     "webhookUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/api/webhook"
   }
