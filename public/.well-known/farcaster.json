@@ -9,9 +9,9 @@
     "name": "Farcaster Chat Bot",
     "iconUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
     "homeUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/",
-    "imageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
+    "imageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/image.png",
     "buttonTitle": "Start Chat",
-    "splashImageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
+    "splashImageUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/image.png",
     "splashBackgroundColor": "#4F46E5",
     "webhookUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/api/webhook"
   }
