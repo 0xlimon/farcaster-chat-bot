@@ -146,12 +146,16 @@ export default function ChatBot() {
               </div>
               <div className="w-10 h-10 rounded-full overflow-hidden bg-indigo-400 flex items-center justify-center">
                 {userProfileImage ? (
-                  <Image 
+                  // استفاده از تگ img به جای کامپوننت Image برای اطمینان از نمایش صحیح
+                  <img 
                     src={userProfileImage} 
-                    alt={userDisplayName} 
-                    width={40} 
-                    height={40}
+                    alt={userDisplayName || 'User profile'} 
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      console.error('Error loading profile image:', userProfileImage);
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.onerror = null;
+                    }}
                   />
                 ) : (
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
