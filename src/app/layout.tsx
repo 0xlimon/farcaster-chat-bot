@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   other: {
     // Farcaster Frame meta tag - required for Frame detection
     "fc:frame": JSON.stringify({
-      version: "next",
+      version: "1",
       imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/img.png",
       button: {
         title: "Start Chat",
@@ -44,7 +44,7 @@ export default function RootLayout({
       <head>
         {/* Manually add Farcaster Frame meta tag as fallback */}
         <meta name="fc:frame" content={JSON.stringify({
-          version: "next",
+          version: "1",
           imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/img.png",
           button: {
             title: "Start Chat",
