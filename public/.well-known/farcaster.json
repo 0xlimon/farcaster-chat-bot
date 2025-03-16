@@ -5,7 +5,7 @@
     "signature": "REPLACE_WITH_YOUR_SIGNATURE"
   },
   "frame": {
-    "version": "1",
+    "version": "next",
     "name": "Farcaster Chat Bot",
     "iconUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
     "homeUrl": "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/",
