@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     // Farcaster Frame meta tag - required for Frame detection
     "fc:frame": JSON.stringify({
       version: "next",
-      imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/preview.png",
+      imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/img.png",
       button: {
         title: "Start Chat",
         action: {
           type: "launch_frame",
           name: "Farcaster Chat Bot",
           url: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/",
-          splashImageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/splash.png",
+          splashImageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
           splashBackgroundColor: "#4F46E5"
         }
       }
@@ -45,14 +45,14 @@ export default function RootLayout({
         {/* Manually add Farcaster Frame meta tag as fallback */}
         <meta name="fc:frame" content={JSON.stringify({
           version: "next",
-          imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/preview.png",
+          imageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/img.png",
           button: {
             title: "Start Chat",
             action: {
               type: "launch_frame",
               name: "Farcaster Chat Bot",
               url: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/",
-              splashImageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/splash.png",
+              splashImageUrl: "https://farcaster-chat-bot-git-main-0xlimons-projects.vercel.app/chat.png",
               splashBackgroundColor: "#4F46E5"
             }
           }
