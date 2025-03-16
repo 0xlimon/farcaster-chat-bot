@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Farcaster ChatBot Frame
 
-## Getting Started
+A chat bot implementation for Farcaster using Frames v2. This chat bot allows users to have conversations and ask questions through a Farcaster frame.
 
-First, run the development server:
+## Features
+
+- Interactive chat interface
+- Integration with AI models via API
+- Responsive design
+- Farcaster Frame v2 implementation
+- User authentication through Farcaster account
+
+## Prerequisites
+
+- Node.js 18.x or later
+- Yarn package manager
+- A Farcaster account
+- AI API access (optional, but recommended for full functionality)
+
+## Installation
+
+1. Clone this repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/farcaster-chatbot-frame.git
+cd farcaster-chatbot-frame
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up environment variables:
 
-## Learn More
+Create a `.env.local` file in the root directory with the following variables:
 
-To learn more about Next.js, take a look at the following resources:
+```
+AI_API_URL=https://api.hyperbolic.xyz/v1/chat/completions
+AI_API_KEY=your_api_key_here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Replace `your_api_key_here` with your actual API key.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+To start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This will start a local server at http://localhost:3000.
+
+## Deploying to Production
+
+1. Build the production version:
+
+```bash
+yarn build
+```
+
+2. Deploy to your preferred hosting platform (Vercel, Netlify, etc.).
+
+## Using with Farcaster
+
+To use this chat bot with Farcaster:
+
+1. Deploy your application to a public URL
+2. Create a Farcaster domain manifest file at `/.well-known/farcaster.json`
+3. Follow the Farcaster developer documentation to register your frame
+4. Users can access your chat bot through the Farcaster client
+
+## Usage
+
+When a user accesses your frame through Farcaster:
+
+1. The chat bot will be presented with a welcome message
+2. Users can type and send messages
+3. The AI will respond to the user's messages
+4. The conversation history is maintained during the session
+
+## Customization
+
+You can customize various aspects of the chat bot:
+
+- Change the system prompt in `src/app/api/chat/route.ts`
+- Modify the UI design in the component files
+- Adjust the AI model parameters in the API request
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
